@@ -20,7 +20,7 @@
 }
 @media (prefers-color-scheme:dark){
   :root{--bg:#081f31;--panel:#161a14;--ink:#e4eadb;--faint:#8b958a;--rule:#2c3226;
-    --navy:#2a5c84;--red:#d4564a;--gold:#e0b955;--field:#11140d;--good:#5fa06c;--bad:#cd5848}
+    --navy:#2a5c84;--red:#c55045;--gold:#e0b955;--field:#11140d;--good:#5fa06c;--bad:#cd5848}
 }
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:"Body",sans-serif;
@@ -29,25 +29,25 @@ body{margin:0;background:var(--bg);color:var(--ink);font-family:"Body",sans-seri
 .bunting i{flex:1;height:100%}
 .wrap{max-width:780px;margin:34px auto 0;padding:0 16px}
 .panel{background:var(--panel);border-radius:10px;padding:26px 28px 24px;box-shadow:0 14px 32px rgba(0,0,0,.34)}
-h1{font-family:"Head",sans-serif;font-weight:400;font-size:40px;letter-spacing:.02em;margin:0 0 2px;color:var(--navy)}
+h1{font-family:"Head",sans-serif;font-weight:400;font-size:40px;letter-spacing:.02em;margin:0 0 2px;color:#36658b}
 .sub{font-family:"Mono",monospace;font-size:13px;color:var(--faint);margin-bottom:20px}
 .modes{display:flex;gap:8px;margin-bottom:8px;flex-wrap:wrap}
 .mode{font-family:"Mono",monospace;font-size:12px;letter-spacing:.05em;text-transform:uppercase;border:1px solid var(--rule);
   background:var(--field);color:var(--faint);border-radius:6px;padding:8px 14px;cursor:pointer}
-.mode[aria-pressed="true"]{background:var(--navy);color:var(--panel);border-color:var(--navy)}
+.mode[aria-pressed="true"]{background:var(--navy);color:#ffffff;border-color:var(--navy)}
 .opts{display:flex;gap:14px;align-items:center;margin:12px 0;font-family:"Mono",monospace;font-size:12.5px;color:var(--faint);flex-wrap:wrap}
 .opts label{display:inline-flex;align-items:center;gap:7px;cursor:pointer}
 .opts input{width:15px;height:15px;accent-color:var(--red)}
 .io label.l{font-family:"Mono",monospace;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--faint);display:block;margin:14px 0 6px}
 textarea{font-family:"Mono",monospace;font-size:14px;color:var(--ink);background:var(--field);
   border:1px solid var(--rule);border-radius:7px;padding:12px;width:100%;min-height:96px;resize:vertical;line-height:1.55;word-break:break-all}
-textarea:focus{outline:2px solid var(--navy);outline-offset:-1px}
+textarea:focus{outline:2px solid #426f92;outline-offset:-1px}
 .swapbar{display:flex;gap:10px;align-items:center;margin:14px 0 4px;flex-wrap:wrap}
 button.act{font-family:"Body",sans-serif;font-size:14px;letter-spacing:.05em;text-transform:uppercase;border:0;border-radius:6px;padding:10px 18px;cursor:pointer;color:#fff}
 .enc{background:var(--navy)}.dec{background:var(--red)}
 .swap{background:var(--field);color:var(--ink);border:1px solid var(--rule)}
-.copy{background:var(--gold);color:#241c00}
-.copy.done{background:var(--good);color:#fff}
+.act.copy{background:var(--gold);color:#241c00}
+.copy.done{background:var(--good);color:#241c00}
 .status{font-family:"Mono",monospace;font-size:12.5px;margin-left:auto}
 .status.ok{color:var(--good)}.status.err{color:var(--bad)}
 .note{margin-top:16px;font-family:"Mono",monospace;font-size:12px;color:var(--faint);line-height:1.7}
@@ -60,7 +60,7 @@ button.act{font-family:"Body",sans-serif;font-size:14px;letter-spacing:.05em;tex
 :root, :root[data-theme="dark"] {
   --bad: #ff6450;
   --bg: #0a0a0a;
-  --faint: #6e6e68;
+  --faint: #898983;
   --field: #111110;
   --gold: #ffb454;
   --good: #7ddc7d;
@@ -82,6 +82,301 @@ button.act{font-family:"Body",sans-serif;font-size:14px;letter-spacing:.05em;tex
 :root { color-scheme: dark; }
 :root[data-theme="light"] { color-scheme: light; }
 </style>
+<!--
+Third-party font notices for this page. Subsets of the fonts below are embedded in this page as base64 data.
+Each is used under its own license, not under the MIT License of this page.
+
+Bebas Neue (https://github.com/google/fonts/tree/main/ofl/bebasneue)
+Copyright © 2010 by Dharma Type.
+License: SIL Open Font License, Version 1.1
+
+Oswald (https://github.com/google/fonts/tree/main/ofl/oswald)
+Copyright 2016 The Oswald Project Authors (https://github.com/googlefonts/OswaldFont)
+License: SIL Open Font License, Version 1.1
+
+Space Mono (https://github.com/google/fonts/tree/main/ofl/spacemono)
+Copyright 2016 The Space Mono Project Authors (https://github.com/googlefonts/spacemono)
+License: SIL Open Font License, Version 1.1
+
+Full license texts:
+
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is copied below, and is also available with a FAQ at:
+http://scripts.sil.org/OFL
+
+
+-----------------------------------------------------------
+SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
+-----------------------------------------------------------
+
+PREAMBLE
+The goals of the Open Font License (OFL) are to stimulate worldwide
+development of collaborative font projects, to support the font creation
+efforts of academic and linguistic communities, and to provide a free and
+open framework in which fonts may be shared and improved in partnership
+with others.
+
+The OFL allows the licensed fonts to be used, studied, modified and
+redistributed freely as long as they are not sold by themselves. The
+fonts, including any derivative works, can be bundled, embedded,
+redistributed and/or sold with any software provided that any reserved
+names are not used by derivative works. The fonts and derivatives,
+however, cannot be released under any other type of license. The
+requirement for fonts to remain under this license does not apply
+to any document created using the fonts or their derivatives.
+
+DEFINITIONS
+"Font Software" refers to the set of files released by the Copyright
+Holder(s) under this license and clearly marked as such. This may
+include source files, build scripts and documentation.
+
+"Reserved Font Name" refers to any names specified as such after the
+copyright statement(s).
+
+"Original Version" refers to the collection of Font Software components as
+distributed by the Copyright Holder(s).
+
+"Modified Version" refers to any derivative made by adding to, deleting,
+or substituting -- in part or in whole -- any of the components of the
+Original Version, by changing formats or by porting the Font Software to a
+new environment. 
+
+"Author" refers to any designer, engineer, programmer, technical
+writer or other person who contributed to the Font Software.
+
+PERMISSION & CONDITIONS
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of the Font Software, to use, study, copy, merge, embed, modify,
+redistribute, and sell modified and unmodified copies of the Font
+Software, subject to the following conditions:
+
+1) Neither the Font Software nor any of its individual components,
+in Original or Modified Versions, may be sold by itself.
+
+2) Original or Modified Versions of the Font Software may be bundled,
+redistributed and/or sold with any software, provided that each copy
+contains the above copyright notice and this license. These can be
+included either as stand-alone text files, human-readable headers or
+in the appropriate machine-readable metadata fields within text or
+binary files as long as those fields can be easily viewed by the user.
+
+3) No Modified Version of the Font Software may use the Reserved Font
+Name(s) unless explicit written permission is granted by the corresponding
+Copyright Holder. This restriction only applies to the primary font name as
+presented to the users.
+
+4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font
+Software shall not be used to promote, endorse or advertise any
+Modified Version, except to acknowledge the contribution(s) of the
+Copyright Holder(s) and the Author(s) or with their explicit written
+permission.
+
+5) The Font Software, modified or unmodified, in part or in whole,
+must be distributed entirely under this license, and must not be
+distributed under any other license. The requirement for fonts to
+remain under this license does not apply to any document created
+using the Font Software.
+
+TERMINATION
+This license becomes null and void if any of the above conditions are
+not met.
+
+DISCLAIMER
+THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT
+OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE
+COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL
+DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
+OTHER DEALINGS IN THE FONT SOFTWARE.
+
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is copied below, and is also available with a FAQ at:
+https://scripts.sil.org/OFL
+
+
+-----------------------------------------------------------
+SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
+-----------------------------------------------------------
+
+PREAMBLE
+The goals of the Open Font License (OFL) are to stimulate worldwide
+development of collaborative font projects, to support the font creation
+efforts of academic and linguistic communities, and to provide a free and
+open framework in which fonts may be shared and improved in partnership
+with others.
+
+The OFL allows the licensed fonts to be used, studied, modified and
+redistributed freely as long as they are not sold by themselves. The
+fonts, including any derivative works, can be bundled, embedded, 
+redistributed and/or sold with any software provided that any reserved
+names are not used by derivative works. The fonts and derivatives,
+however, cannot be released under any other type of license. The
+requirement for fonts to remain under this license does not apply
+to any document created using the fonts or their derivatives.
+
+DEFINITIONS
+"Font Software" refers to the set of files released by the Copyright
+Holder(s) under this license and clearly marked as such. This may
+include source files, build scripts and documentation.
+
+"Reserved Font Name" refers to any names specified as such after the
+copyright statement(s).
+
+"Original Version" refers to the collection of Font Software components as
+distributed by the Copyright Holder(s).
+
+"Modified Version" refers to any derivative made by adding to, deleting,
+or substituting -- in part or in whole -- any of the components of the
+Original Version, by changing formats or by porting the Font Software to a
+new environment.
+
+"Author" refers to any designer, engineer, programmer, technical
+writer or other person who contributed to the Font Software.
+
+PERMISSION & CONDITIONS
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of the Font Software, to use, study, copy, merge, embed, modify,
+redistribute, and sell modified and unmodified copies of the Font
+Software, subject to the following conditions:
+
+1) Neither the Font Software nor any of its individual components,
+in Original or Modified Versions, may be sold by itself.
+
+2) Original or Modified Versions of the Font Software may be bundled,
+redistributed and/or sold with any software, provided that each copy
+contains the above copyright notice and this license. These can be
+included either as stand-alone text files, human-readable headers or
+in the appropriate machine-readable metadata fields within text or
+binary files as long as those fields can be easily viewed by the user.
+
+3) No Modified Version of the Font Software may use the Reserved Font
+Name(s) unless explicit written permission is granted by the corresponding
+Copyright Holder. This restriction only applies to the primary font name as
+presented to the users.
+
+4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font
+Software shall not be used to promote, endorse or advertise any
+Modified Version, except to acknowledge the contribution(s) of the
+Copyright Holder(s) and the Author(s) or with their explicit written
+permission.
+
+5) The Font Software, modified or unmodified, in part or in whole,
+must be distributed entirely under this license, and must not be
+distributed under any other license. The requirement for fonts to
+remain under this license does not apply to any document created
+using the Font Software.
+
+TERMINATION
+This license becomes null and void if any of the above conditions are
+not met.
+
+DISCLAIMER
+THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT
+OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE
+COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL
+DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
+OTHER DEALINGS IN THE FONT SOFTWARE.
+
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is copied below, and is also available with a FAQ at:
+http://scripts.sil.org/OFL
+
+
+-----------------------------------------------------------
+SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
+-----------------------------------------------------------
+
+PREAMBLE
+The goals of the Open Font License (OFL) are to stimulate worldwide
+development of collaborative font projects, to support the font creation
+efforts of academic and linguistic communities, and to provide a free and
+open framework in which fonts may be shared and improved in partnership
+with others.
+
+The OFL allows the licensed fonts to be used, studied, modified and
+redistributed freely as long as they are not sold by themselves. The
+fonts, including any derivative works, can be bundled, embedded, 
+redistributed and/or sold with any software provided that any reserved
+names are not used by derivative works. The fonts and derivatives,
+however, cannot be released under any other type of license. The
+requirement for fonts to remain under this license does not apply
+to any document created using the fonts or their derivatives.
+
+DEFINITIONS
+"Font Software" refers to the set of files released by the Copyright
+Holder(s) under this license and clearly marked as such. This may
+include source files, build scripts and documentation.
+
+"Reserved Font Name" refers to any names specified as such after the
+copyright statement(s).
+
+"Original Version" refers to the collection of Font Software components as
+distributed by the Copyright Holder(s).
+
+"Modified Version" refers to any derivative made by adding to, deleting,
+or substituting -- in part or in whole -- any of the components of the
+Original Version, by changing formats or by porting the Font Software to a
+new environment.
+
+"Author" refers to any designer, engineer, programmer, technical
+writer or other person who contributed to the Font Software.
+
+PERMISSION & CONDITIONS
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of the Font Software, to use, study, copy, merge, embed, modify,
+redistribute, and sell modified and unmodified copies of the Font
+Software, subject to the following conditions:
+
+1) Neither the Font Software nor any of its individual components,
+in Original or Modified Versions, may be sold by itself.
+
+2) Original or Modified Versions of the Font Software may be bundled,
+redistributed and/or sold with any software, provided that each copy
+contains the above copyright notice and this license. These can be
+included either as stand-alone text files, human-readable headers or
+in the appropriate machine-readable metadata fields within text or
+binary files as long as those fields can be easily viewed by the user.
+
+3) No Modified Version of the Font Software may use the Reserved Font
+Name(s) unless explicit written permission is granted by the corresponding
+Copyright Holder. This restriction only applies to the primary font name as
+presented to the users.
+
+4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font
+Software shall not be used to promote, endorse or advertise any
+Modified Version, except to acknowledge the contribution(s) of the
+Copyright Holder(s) and the Author(s) or with their explicit written
+permission.
+
+5) The Font Software, modified or unmodified, in part or in whole,
+must be distributed entirely under this license, and must not be
+distributed under any other license. The requirement for fonts to
+remain under this license does not apply to any document created
+using the Font Software.
+
+TERMINATION
+This license becomes null and void if any of the above conditions are
+not met.
+
+DISCLAIMER
+THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT
+OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE
+COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL
+DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
+OTHER DEALINGS IN THE FONT SOFTWARE.
+
+-->
 </head>
 <body>
 <div class="bunting" id="bunting" aria-hidden="true"></div>
@@ -97,7 +392,7 @@ button.act{font-family:"Body",sans-serif;font-size:14px;letter-spacing:.05em;tex
     <label><input type="checkbox" id="urlsafe"> URL-safe alphabet (- and _, no padding)</label>
   </div>
   <div class="io">
-    <label class="l">Input</label>
+    <label class="l" for="input">Input</label>
     <textarea id="input" spellcheck="false" autocapitalize="off">Ship it. Document the journey.</textarea>
     <div class="swapbar">
       <button class="act enc" id="encode">Encode</button>
@@ -106,7 +401,7 @@ button.act{font-family:"Body",sans-serif;font-size:14px;letter-spacing:.05em;tex
       <button class="act copy" id="copy">Copy output</button>
       <span class="status" id="status"></span>
     </div>
-    <label class="l">Output</label>
+    <label class="l" for="output">Output</label>
     <textarea id="output" spellcheck="false" autocapitalize="off" readonly></textarea>
   </div>
   <div class="note">Encoding is not encryption. Base64 and percent-encoding make text safe to carry in places that restrict characters; anyone can decode them. Do not treat encoded text as hidden or secure.</div>
