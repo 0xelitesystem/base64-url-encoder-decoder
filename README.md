@@ -4,6 +4,16 @@ This tool encodes and decodes text two ways: Base64, in the standard or URL-safe
 
 **Live demo:** https://0xelitesystem.github.io/base64-url-encoder-decoder/
 
+## Use
+
+1. Pick Base64 or URL percent.
+2. Type or paste text into Input. For Base64, tick URL-safe alphabet if you need the dash and underscore form with no padding.
+3. Click Encode or Decode, then Copy output. Swap fields moves the output back into the input for chaining.
+
+## Why this exists
+
+Encoding a string for a URL or a Base64 field is a few seconds of work that should not mean sending the text to a server. This tool does it locally with correct UTF-8 handling. It is one HTML file with no tracking and no network calls, MIT licensed.
+
 ## What it does
 
 Pick Base64 or URL percent-encoding, type or paste your text, and encode or decode. For Base64 you can switch to the URL-safe alphabet, which uses dash and underscore and drops padding. A swap button moves the output back into the input for chaining, and a copy button takes the result.
@@ -18,9 +28,18 @@ Maritime signal flags: a bunting strip of nautical flags across the top, a conde
 
 Everything runs in your browser. Nothing you type is sent anywhere, stored, or saved. Closing the tab clears it.
 
-## Use it
+## Run locally
+
+```
+git clone https://github.com/0xelitesystem/base64-url-encoder-decoder
+cd base64-url-encoder-decoder
+```
 
 Open `index.html` in any modern browser, or host it as a static page. No build step, no dependencies, no network calls.
+
+## Build
+
+No build step. The whole tool is one `index.html` file with inline CSS, JavaScript and embedded font subsets.
 
 ## More
 
